@@ -1,0 +1,5 @@
+
+/// Book model
+class Book {
+
+}

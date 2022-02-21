@@ -12,6 +12,12 @@ class MyApp extends StatelessWidget {
       title: 'Book Store',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        primaryColor: Colors.teal,
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          selectedItemColor: Colors.teal,
+          selectedLabelStyle: TextStyle(fontSize: 12.0),
+          showUnselectedLabels: false,
+        )
       ),
       home: HomeScreen(),
     );

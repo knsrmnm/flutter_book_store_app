@@ -45,6 +45,28 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Iconsax.book),
+            activeIcon: Icon(Iconsax.book, color: Colors.teal),
+            label: 'Book',
+            tooltip: "This is a Book Page",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Iconsax.shop),
+            activeIcon: Icon(Iconsax.shop, color: Colors.teal),
+            label: 'Shop',
+            tooltip: "This is a Business Page",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Iconsax.profile_circle),
+            activeIcon: Icon(Iconsax.personalcard, color: Colors.teal),
+            label: 'My page',
+            tooltip: "This is a School Page",
+          ),
+        ],
+      )
     );
   }
 }

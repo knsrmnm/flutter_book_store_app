@@ -1,6 +1,9 @@
 # flutter_book_store_app
 
-A new Flutter project.
+Flutter Book Store Application UI.
+
+
+<img width="200" alt="screenshot" src="/assets/screenshots/screenshot1.png">
 
 ## Getting Started
 

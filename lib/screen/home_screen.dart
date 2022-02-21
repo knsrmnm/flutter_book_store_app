@@ -32,12 +32,12 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               children: [
                 _makeSearchBoxEl(),
-                const SizedBox(height: 10.0),
-                _makeTitleEl("New Arrival"),
+                const SizedBox(height: 20.0),
+                _makeTitleEl("🔥New Arrival"),
                 const SizedBox(height: 10.0),
                 _makeBookSlider(BookList.newArrivalBooks),
                 const SizedBox(height: 30.0),
-                _makeTitleEl("For You"),
+                _makeTitleEl("️For You"),
                 const SizedBox(height: 10.0),
                 _makeBookSlider(BookList.forYouBooks),
               ],
@@ -54,8 +54,8 @@ class _HomeScreenState extends State<HomeScreen> {
             tooltip: "This is a Book Page",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Iconsax.shop),
-            activeIcon: Icon(Iconsax.shop, color: Colors.teal),
+            icon: Icon(Iconsax.shopping_cart),
+            activeIcon: Icon(Iconsax.shopping_cart, color: Colors.teal),
             label: 'Shop',
             tooltip: "This is a Business Page",
           ),
@@ -83,7 +83,7 @@ Widget _makeSearchBoxEl() {
           ),
           child: TextField(
             decoration: InputDecoration(
-              prefixIcon: Icon(Icons.search, color: Colors.grey,),
+              prefixIcon: Icon(Icons.search, color: Colors.grey),
               border: InputBorder.none,
               hintStyle: TextStyle(color: Colors.grey),
               hintText: "Search",
@@ -92,7 +92,7 @@ Widget _makeSearchBoxEl() {
         ),
       ),
       const SizedBox(width: 20.0),
-      Icon(Iconsax.camera, color: Colors.grey[800], size: 25),
+      Icon(Iconsax.camera, color: Colors.black45, size: 25),
     ],
   );
 }
@@ -104,7 +104,7 @@ Widget _makeTitleEl(String title) {
     children: [
       Text(
         title,
-        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600),
       ),
       TextButton(
         onPressed: (){},
@@ -138,7 +138,7 @@ Widget _makeBookEl(Book book) {
       children: [
         Image.asset(book.image, height: 120.0),
         const SizedBox(height: 5.0),
-        Text(book.title, style: TextStyle(fontWeight: FontWeight.w500), overflow: TextOverflow.ellipsis),
+        Text(book.title, style: TextStyle(fontWeight: FontWeight.w500, fontSize: 12.0), overflow: TextOverflow.ellipsis),
         const SizedBox(height: 5.0),
         _makeTextWithBg(book.category.name, book.category.bgColor, book.category.textColor),
       ],

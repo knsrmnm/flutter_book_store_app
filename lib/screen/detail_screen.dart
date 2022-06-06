@@ -14,13 +14,12 @@ class _DetailScreenState extends State<DetailScreen> {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         leading: IconButton(
-          onPressed: (){},
+          onPressed: () => Navigator.of(context).pop(),
           icon: Icon(Iconsax.arrow_left, color: Colors.grey[600]),
         ),
         actions: [

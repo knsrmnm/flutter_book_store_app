@@ -1,9 +1,9 @@
 # flutter_book_store_app
 
-Flutter Book Store Application UI.
+📚 Flutter Book Store Application UI.
 
 
-<img width="200" alt="screenshot" src="/assets/screenshots/screenshot1.png">
+<img width="200" alt="screenshot" src="/screen1.png">  <img width="200" alt="screenshot" src="/screen2.png">
 
 ## Getting Started
 
